@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Emerge sites</title>
+    <title>Emerge Sites</title>
     <meta content="Emerge Sites is a Cape Town-based web development agency specialising in custom websites, SEO, and digital solutions for businesses of all sizes." name="description" />
     <meta content="web development, website design, SEO, Cape Town, South Africa, Emerge Sites, React, Next.js, full stack" name="keywords" />
 
@@ -14,7 +14,7 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Space+Grotesk:300,400,500,600,700"
       rel="stylesheet"
     />
 
@@ -70,7 +70,7 @@
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex align-items-center">
       <div class="container d-flex align-items-center">
-        <h1 class="logo me-auto"><a href="index.html">Emerge sites</a></h1>
+        <h1 class="logo me-auto"><a href="index.html">Emerge Sites</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -96,114 +96,31 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero">
-      <div
-        id="heroCarousel"
-        data-bs-interval="5000"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide 1 -->
-          <div
-            class="carousel-item active"
-            style="background-image: url(assets/img/slide/slide-1.jpg)"
-          >
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">
-                  <span>Emerge Sites:</span> Crafting Your Digital Dreams
-                </h2>
-                <p class="animate__animated animate__fadeInUp">
-                  At Emerge Sites, we are committed to turning your business
-                  ideas into successful online platforms. We provide expert
-                  developers who will create a website tailored to your needs
-                  and goals.
-                </p>
-                <a
-                  href="#about"
-                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div
-            class="carousel-item"
-            style="background-image: url(assets/img/slide/slide-2.jpg)"
-          >
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">
-                  Making Your Online Presence Possible
-                </h2>
-                <p class="animate__animated animate__fadeInUp">
-                  With Emerge Sites, we make your online presence possible. No
-                  matter who you are or what you do, we are here to support you
-                  in creating a website that stands out.
-                </p>
-                <a
-                  href="#about"
-                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div
-            class="carousel-item"
-            style="background-image: url(assets/img/slide/slide-3.jpg)"
-          >
-            <div class="carousel-container">
-              <div class="container">
-                <h2 class="animate__animated animate__fadeInDown">
-                  Bridging the Gap to Your Success Online
-                </h2>
-                <p class="animate__animated animate__fadeInUp">
-                  At Emerge Sites, we bridge the gap between your ideas and the
-                  digital world. Regardless of your background, we provide
-                  professional development teams to turn your vision into
-                  reality.
-                </p>
-                <a
-                  href="#about"
-                  class="btn-get-started animate__animated animate__fadeInUp scrollto"
-                  >Read More</a
-                >
-              </div>
-            </div>
+    <section id="hero" class="hero-3d">
+      <div id="hero-canvas-container"></div>
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-text">
+            <h2 class="hero-title">
+              <span class="hero-title-accent">Emerge Sites:</span> Crafting Your Digital Dreams
+            </h2>
+            <p class="hero-description">
+              At Emerge Sites, we are committed to turning your business
+              ideas into successful online platforms. We provide expert
+              developers who will create a website tailored to your needs
+              and goals.
+            </p>
+            <a
+              href="#about"
+              class="btn-get-started scrollto"
+              >Read More</a
+            >
           </div>
         </div>
-
-        <a
-          class="carousel-control-prev"
-          href="#heroCarousel"
-          role="button"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon bi bi-chevron-left"
-            aria-hidden="true"
-          ></span>
-        </a>
-
-        <a
-          class="carousel-control-next"
-          href="#heroCarousel"
-          role="button"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon bi bi-chevron-right"
-            aria-hidden="true"
-          ></span>
-        </a>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span class="scroll-text">Scroll</span>
+        <i class="bi bi-chevron-down bounce"></i>
       </div>
     </section>
     <!-- End Hero -->
@@ -214,7 +131,7 @@
         <div class="container">
           <div class="row no-gutters">
             <div class="col-lg-4 col-md-6">
-              <div class="icon-box">
+              <div class="icon-box" data-parallax="0.1">
                 <div class="icon"><i class="bi bi-laptop"></i></div>
                 <h4 class="title"><a href="">Custom Web Development</a></h4>
                 <p class="description">
@@ -225,7 +142,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <div class="icon-box">
+              <div class="icon-box" data-parallax="0.15">
                 <div class="icon"><i class="bi bi-briefcase"></i></div>
                 <h4 class="title"><a href="">Modern Tech Stack</a></h4>
                 <p class="description">
@@ -235,7 +152,7 @@
               </div>
             </div>
             <div class="col-lg-4 col-md-6">
-              <div class="icon-box">
+              <div class="icon-box" data-parallax="0.1">
                 <div class="icon"><i class="bi bi-calendar4-week"></i></div>
                 <h4 class="title"><a href="">Ongoing Support & Maintenance</a></h4>
                 <p class="description">
@@ -253,7 +170,7 @@
       <!-- ======= About Us Section ======= -->
       <section id="about" class="about">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-parallax="0.05">
             <h2>About Us</h2>
             <p>
               Emerge Sites is a Cape Town-based web development agency founded by
@@ -265,10 +182,10 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-6 order-1 order-lg-2">
-              <img src="assets/img/about.jpg" class="img-fluid" alt="" />
+            <div class="col-lg-6 order-1 order-lg-2" data-parallax="0.1">
+              <img src="assets/img/about.jpg" class="img-fluid about-image" alt="About Emerge Sites" />
             </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-parallax="0.05">
               <h3>
                 Building digital products that drive real results for your
                 business.
@@ -308,7 +225,7 @@
       <section id="why-us" class="why-us">
         <div class="container">
           <div class="row no-gutters">
-            <div class="col-lg-4 col-md-6 content-item">
+            <div class="col-lg-4 col-md-6 content-item" data-parallax="0.1">
               <span>01</span>
               <h4>Industry Experience</h4>
               <p>
@@ -317,7 +234,7 @@
               </p>
             </div>
 
-            <div class="col-lg-4 col-md-6 content-item">
+            <div class="col-lg-4 col-md-6 content-item" data-parallax="0.15">
               <span>02</span>
               <h4>Award-Winning Innovation</h4>
               <p>
@@ -327,7 +244,7 @@
               </p>
             </div>
 
-            <div class="col-lg-4 col-md-6 content-item">
+            <div class="col-lg-4 col-md-6 content-item" data-parallax="0.1">
               <span>03</span>
               <h4>Full-Stack Capability</h4>
               <p>
@@ -337,7 +254,7 @@
               </p>
             </div>
 
-            <div class="col-lg-4 col-md-6 content-item">
+            <div class="col-lg-4 col-md-6 content-item" data-parallax="0.1">
               <span>04</span>
               <h4>Cloud-First Architecture</h4>
               <p>
@@ -346,7 +263,7 @@
               </p>
             </div>
 
-            <div class="col-lg-4 col-md-6 content-item">
+            <div class="col-lg-4 col-md-6 content-item" data-parallax="0.15">
               <span>05</span>
               <h4>Agile & Collaborative</h4>
               <p>
@@ -355,7 +272,7 @@
               </p>
             </div>
 
-            <div class="col-lg-4 col-md-6 content-item">
+            <div class="col-lg-4 col-md-6 content-item" data-parallax="0.1">
               <span>06</span>
               <h4>Locally Rooted, Globally Ready</h4>
               <p>
@@ -371,7 +288,7 @@
       <!-- ======= Our Clients Section ======= -->
       <section id="clients" class="clients">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-parallax="0.05">
             <h2>Our Clients</h2>
             <p>
               We partner with startups, SMEs, and established enterprises
@@ -435,7 +352,7 @@
       <!-- ======= Services Section ======= -->
       <section id="services" class="services">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-parallax="0.05">
             <h2>Services</h2>
             <p>
               Emerge Sites offers a comprehensive suite of digital services to
@@ -450,6 +367,7 @@
               class="col-lg-4 col-md-6 d-flex align-items-stretch"
               data-aos="zoom-in"
               data-aos-delay="100"
+              data-parallax="0.1"
             >
               <div class="icon-box iconbox-blue">
                 <div class="icon">
@@ -468,7 +386,7 @@
                   </svg>
                   <i class="bx bx-pen"></i>
                 </div>
-                <h4><a href="">website design</a></h4>
+                <h4><a href="">Website Design</a></h4>
                 <p>
                   We specialize in creating visually appealing and user-friendly
                   websites that align perfectly with your brand identity. Our
@@ -483,6 +401,7 @@
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
               data-aos="zoom-in"
               data-aos-delay="200"
+              data-parallax="0.15"
             >
               <div class="icon-box iconbox-orange">
                 <div class="icon">
@@ -516,6 +435,7 @@
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
               data-aos="zoom-in"
               data-aos-delay="300"
+              data-parallax="0.1"
             >
               <div class="icon-box iconbox-pink">
                 <div class="icon">
@@ -548,6 +468,7 @@
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
               data-aos="zoom-in"
               data-aos-delay="100"
+              data-parallax="0.1"
             >
               <div class="icon-box iconbox-yellow">
                 <div class="icon">
@@ -566,7 +487,7 @@
                   </svg>
                   <i class="bx bx-layer"></i>
                 </div>
-                <h4><a href=""> Website development and maintenance</a></h4>
+                <h4><a href="">Website Development and Maintenance</a></h4>
                 <p>
                   We offer both website development and maintenance services.
                   Our development service includes creating a new website or
@@ -582,6 +503,7 @@
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
               data-aos="zoom-in"
               data-aos-delay="200"
+              data-parallax="0.15"
             >
               <div class="icon-box iconbox-red">
                 <div class="icon">
@@ -614,6 +536,7 @@
               class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
               data-aos="zoom-in"
               data-aos-delay="300"
+              data-parallax="0.1"
             >
               <div class="icon-box iconbox-teal">
                 <div class="icon">
@@ -632,7 +555,7 @@
                   </svg>
                   <i class="bx bx-arch"></i>
                 </div>
-                <h4><a href="">Payment gateway integration</a></h4>
+                <h4><a href="">Payment Gateway Integration</a></h4>
                 <p>
                   Our payment gateway integration service enables your clients
                   to accept online payments securely and efficiently. We
@@ -648,7 +571,7 @@
       <!-- End Services Section -->
 
       <!-- ======= Cta Section ======= -->
-      <section id="cta" class="cta">
+      <section id="cta" class="cta" data-parallax="0.05">
         <div class="container">
           <div class="row">
             <div class="col-lg-9 text-center text-lg-start">
@@ -670,7 +593,7 @@
       <!-- ======= Portfolio Section ======= -->
       <section id="portfolio" class="portfolio">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-parallax="0.05">
             <h2>Portfolio</h2>
             <p>
               Explore a selection of our recent work, from sleek landing pages
@@ -691,9 +614,9 @@
             </div>
           </div>
 
-          <div class="row portfolio-container">
+          <div class="row portfolio-grid" id="portfolio-container">
             <!-- Frugal -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-item filter-web" data-parallax="0.1">
               <div class="portfolio-wrap">
                 <img
                   src="https://i.ibb.co/vJLTwkX/frugal.png"
@@ -720,7 +643,7 @@
             </div>
 
             <!-- Huzet Landing Page -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-landing">
+            <div class="portfolio-item filter-landing" data-parallax="0.15">
               <div class="portfolio-wrap">
                 <img
                   src="https://i.ibb.co/RY5T6FL/huzet-landing-page.png"
@@ -747,7 +670,7 @@
             </div>
 
             <!-- Aglet Challenge -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-item filter-app" data-parallax="0.1">
               <div class="portfolio-wrap">
                 <img
                   src="https://i.ibb.co/4st14pX/Screenshot-1.png"
@@ -774,7 +697,7 @@
             </div>
 
             <!-- Tickitie -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-item filter-app" data-parallax="0.15">
               <div class="portfolio-wrap">
                 <img
                   src="https://i.ibb.co/vxpfv0qH/Screenshot-2026-03-04-113028.png"
@@ -801,7 +724,7 @@
             </div>
 
             <!-- React Portfolio -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-item filter-web" data-parallax="0.1">
               <div class="portfolio-wrap">
                 <img
                   src="https://i.ibb.co/nndRpwS/Screenshot-2023-08-16-103223.png"
@@ -828,7 +751,7 @@
             </div>
 
             <!-- School Website -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-landing">
+            <div class="portfolio-item filter-landing" data-parallax="0.15">
               <div class="portfolio-wrap">
                 <img
                   src="https://i.ibb.co/xSDgSm3/Screenshot-2023-08-16-103731.png"
@@ -855,7 +778,7 @@
             </div>
 
             <!-- Athas -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-item filter-web" data-parallax="0.1">
               <div class="portfolio-wrap">
                 <img
                   src="https://i.ibb.co/0yQNzyv/IMG-20231129-185312.jpg"
@@ -882,7 +805,7 @@
             </div>
 
             <!-- Cento -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-item filter-web" data-parallax="0.15">
               <div class="portfolio-wrap">
                 <img
                   src="https://i.ibb.co/WzPNcjG/cento.png"
@@ -904,12 +827,11 @@
                       ><i class="bx bx-link"></i
                     ></a>
                   </div>
-                </div>
               </div>
             </div>
 
             <!-- Intwana Hub (Iyk-hub) -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-item filter-app" data-parallax="0.1">
               <div class="portfolio-wrap">
                 <img
                   src="assets/img/portfolio/iykhub.png"
@@ -936,7 +858,7 @@
             </div>
 
             <!-- SME Snapshot -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-item filter-app" data-parallax="0.15">
               <div class="portfolio-wrap">
                 <img
                   src="assets/img/portfolio/sme-snapshot.png"
@@ -1040,9 +962,9 @@
       End Team Section -->
 
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
+      <section id="contact" class="contact" data-parallax="0.05">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-parallax="0.05">
             <h2>Contact</h2>
             <p>
               Have a project in mind or want to learn more about our services?
@@ -1052,7 +974,7 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="col-lg-5 d-flex align-items-stretch" data-parallax="0.1">
               <div class="info">
                 <div class="address">
                   <i class="bi bi-geo-alt"></i>
@@ -1081,7 +1003,7 @@
               </div>
             </div>
 
-            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-parallax="0.1">
               <form
                 action="https://formsubmit.co/el/fedupa"
                 method="POST"
@@ -1188,6 +1110,12 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+    <!-- Three.js for 3D Hero -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <!-- GSAP for Parallax Animations -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
